@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096C703720BBAB8900CF860F /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C703620BBAB8900CF860F /* NetworkTool.swift */; };
+		096C703A20BBADB000CF860F /* HomeNewsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C703920BBADB000CF860F /* HomeNewsTitle.swift */; };
+		096C703C20BBF3F500CF860F /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C703B20BBF3F500CF860F /* MyTheme.swift */; };
+		096C703F20BBFD8900CF860F /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C703E20BBFD8900CF860F /* UIKit+Extension.swift */; };
+		096C704120BBFFD000CF860F /* Calculatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C704020BBFFD000CF860F /* Calculatable.swift */; };
+		096C704520BC025E00CF860F /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C704420BC025E00CF860F /* UserDetail.swift */; };
+		096C704720BC066400CF860F /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C704620BC066400CF860F /* NewsModel.swift */; };
+		098EE61C20B813FB007F9255 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EE61B20B813FB007F9255 /* Const.swift */; };
 		09ACAA2020B6CB2F00FD1AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACAA1F20B6CB2F00FD1AAF /* AppDelegate.swift */; };
 		09ACAA2220B6CB2F00FD1AAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACAA2120B6CB2F00FD1AAF /* ViewController.swift */; };
 		09ACAA2520B6CB2F00FD1AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09ACAA2320B6CB2F00FD1AAF /* Main.storyboard */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		096C703620BBAB8900CF860F /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		096C703920BBADB000CF860F /* HomeNewsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsTitle.swift; sourceTree = "<group>"; };
+		096C703B20BBF3F500CF860F /* MyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTheme.swift; sourceTree = "<group>"; };
+		096C703E20BBFD8900CF860F /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
+		096C704020BBFFD000CF860F /* Calculatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculatable.swift; sourceTree = "<group>"; };
+		096C704420BC025E00CF860F /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		096C704620BC066400CF860F /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		098EE61B20B813FB007F9255 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		09ACAA1C20B6CB2F00FD1AAF /* Headline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Headline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ACAA1F20B6CB2F00FD1AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09ACAA2120B6CB2F00FD1AAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +56,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		096C703020BBAAA700CF860F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				096C704220BC024500CF860F /* Mine */,
+				096C703420BBAB6800CF860F /* Main */,
+				096C703120BBAAB400CF860F /* Home */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		096C703120BBAAB400CF860F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				096C703820BBAD9800CF860F /* model */,
+				096C703220BBAAC500CF860F /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		096C703220BBAAC500CF860F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		096C703420BBAB6800CF860F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				096C703D20BBFD6800CF860F /* Extension */,
+				096C703520BBAB7200CF860F /* Tools */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		096C703520BBAB7200CF860F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				096C703620BBAB8900CF860F /* NetworkTool.swift */,
+				096C703B20BBF3F500CF860F /* MyTheme.swift */,
+				096C704020BBFFD000CF860F /* Calculatable.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		096C703820BBAD9800CF860F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				096C703920BBADB000CF860F /* HomeNewsTitle.swift */,
+				096C704620BC066400CF860F /* NewsModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		096C703D20BBFD6800CF860F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				096C703E20BBFD8900CF860F /* UIKit+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		096C704220BC024500CF860F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				096C704320BC024E00CF860F /* Model */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		096C704320BC024E00CF860F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				096C704420BC025E00CF860F /* UserDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		09ACAA1320B6CB2F00FD1AAF = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +155,14 @@
 		09ACAA1E20B6CB2F00FD1AAF /* Headline */ = {
 			isa = PBXGroup;
 			children = (
+				096C703020BBAAA700CF860F /* Classes */,
 				09ACAA1F20B6CB2F00FD1AAF /* AppDelegate.swift */,
 				09ACAA2120B6CB2F00FD1AAF /* ViewController.swift */,
 				09ACAA2320B6CB2F00FD1AAF /* Main.storyboard */,
 				09ACAA2620B6CB3000FD1AAF /* Assets.xcassets */,
 				09ACAA2820B6CB3000FD1AAF /* LaunchScreen.storyboard */,
 				09ACAA2B20B6CB3000FD1AAF /* Info.plist */,
+				098EE61B20B813FB007F9255 /* Const.swift */,
 			);
 			path = Headline;
 			sourceTree = "<group>";
@@ -232,8 +328,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096C703F20BBFD8900CF860F /* UIKit+Extension.swift in Sources */,
+				096C703720BBAB8900CF860F /* NetworkTool.swift in Sources */,
+				096C704120BBFFD000CF860F /* Calculatable.swift in Sources */,
 				09ACAA2220B6CB2F00FD1AAF /* ViewController.swift in Sources */,
+				096C704720BC066400CF860F /* NewsModel.swift in Sources */,
 				09ACAA2020B6CB2F00FD1AAF /* AppDelegate.swift in Sources */,
+				096C703C20BBF3F500CF860F /* MyTheme.swift in Sources */,
+				096C703A20BBADB000CF860F /* HomeNewsTitle.swift in Sources */,
+				096C704520BC025E00CF860F /* UserDetail.swift in Sources */,
+				098EE61C20B813FB007F9255 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,11 +482,16 @@
 			baseConfigurationReference = 84898BD268F43D672A92E433 /* Pods-Headline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Headline/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.Headline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,11 +502,16 @@
 			baseConfigurationReference = B345406C6B86A7D1E24A4106 /* Pods-Headline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Headline/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.Headline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
