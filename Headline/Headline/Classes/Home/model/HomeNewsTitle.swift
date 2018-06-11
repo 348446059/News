@@ -13,7 +13,7 @@ struct HomeNewsTitle:HandyJSON {
     var tip_new:Int = 0
     var default_add:Int = 0
     var web_url:String = ""
-    var concer_id:String = ""
+    var concern_id:String = ""
     var icon_url:String = ""
     var flags:Int = 0
     var type:Int = 0

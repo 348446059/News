@@ -9,6 +9,14 @@
 import UIKit
 import CoreText
 
+protocol NibLoadable {}
+
+extension NibLoadable{
+   static func loadViewFromNib() -> Self {
+        return Bundle.main.loadNibNamed("\(self)", owner: nil, options: nil)?.last as! Self
+    }
+}
+
 extension UIColor{
     
     convenience init(r:CGFloat,g:CGFloat,b:CGFloat,alpha:CGFloat = 1.0) {
@@ -57,7 +65,7 @@ extension UIColor{
     }
     
     
-    
+  
     
     
     
