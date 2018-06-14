@@ -11,8 +11,8 @@ import HandyJSON
 
 struct SettingModel: HandyJSON {
     
-    var title: String = ""
     var subtitle: String = ""
+    var title: String = ""
     var rightTitle: String = ""
     var isHiddenSubtitle: Bool = false
     var isHiddenRightTitle: Bool = false

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0937E06F20D29A290086796C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937E06E20D29A290086796C /* Test.swift */; };
 		0958854020CE683A00ED059E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958853F20CE683A00ED059E /* HomeTableViewController.swift */; };
 		0958854320CE68CD00ED059E /* VideoPlayerCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958854220CE68CD00ED059E /* VideoPlayerCustomView.swift */; };
 		0958854520CE6ABC00ED059E /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958854420CE6ABC00ED059E /* Emoji.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0937E06E20D29A290086796C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		0958853F20CE683A00ED059E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		0958854220CE68CD00ED059E /* VideoPlayerCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerCustomView.swift; sourceTree = "<group>"; };
 		0958854420CE6ABC00ED059E /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				096C704020BBFFD000CF860F /* Calculatable.swift */,
 				097065FF20CDE5FF00C988C7 /* SQLiteManager.swift */,
 				0958854420CE6ABC00ED059E /* Emoji.swift */,
+				0937E06E20D29A290086796C /* Test.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -554,6 +557,7 @@
 				097065D720CCE8C800C988C7 /* MyTabBarController.swift in Sources */,
 				0958854020CE683A00ED059E /* HomeTableViewController.swift in Sources */,
 				096C704120BBFFD000CF860F /* Calculatable.swift in Sources */,
+				0937E06F20D29A290086796C /* Test.swift in Sources */,
 				0958854720CE70E100ED059E /* Foundation+Extension.swift in Sources */,
 				097065E520CCECBF00C988C7 /* WeitoutiaoViewController.swift in Sources */,
 				09ACAA2220B6CB2F00FD1AAF /* ViewController.swift in Sources */,
