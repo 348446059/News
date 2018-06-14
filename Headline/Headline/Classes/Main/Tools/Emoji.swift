@@ -16,8 +16,8 @@ struct Emoji {
     var isEmpty = false
     
     init(id:String = "",name:String = "",png:String = "",isDelete:Bool = false,isEmpty:Bool = false) {
-        self.id = id
         self.name = name
+        self.id = id
         self.png = png
         self.isEmpty = isEmpty
         self.isDelete = isDelete
