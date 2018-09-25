@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="231" id="KGk-i7-Jjw" customClass="TheyAlsoUseCell" customModule="Headline" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="230.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DuH-VM-5Ik">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKa-SR-EZI">
+                                <rect key="frame" x="15" y="0.0" width="108" height="50"/>
+                                <state key="normal" title="他们也在用头条">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH8-fV-0ir">
+                                <rect key="frame" x="243" y="0.0" width="62" height="50"/>
+                                <state key="normal" title="查看更多">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iH8-fV-0ir" secondAttribute="trailing" constant="15" id="2AM-Wt-if2"/>
+                            <constraint firstItem="BKa-SR-EZI" firstAttribute="leading" secondItem="DuH-VM-5Ik" secondAttribute="leading" constant="15" id="8sQ-wU-wYV"/>
+                            <constraint firstAttribute="bottom" secondItem="iH8-fV-0ir" secondAttribute="bottom" id="EJX-iJ-T9b"/>
+                            <constraint firstItem="iH8-fV-0ir" firstAttribute="top" secondItem="DuH-VM-5Ik" secondAttribute="top" id="FJC-d1-BQE"/>
+                            <constraint firstAttribute="bottom" secondItem="BKa-SR-EZI" secondAttribute="bottom" id="GmM-Wp-2Xb"/>
+                            <constraint firstAttribute="height" constant="50" id="MjU-tI-fz6"/>
+                            <constraint firstItem="BKa-SR-EZI" firstAttribute="top" secondItem="DuH-VM-5Ik" secondAttribute="top" id="wyj-pr-JhY"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HJX-5Y-bgF">
+                        <rect key="frame" x="0.0" y="50" width="320" height="170.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jzu-nB-S78">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjV-KD-VqX">
+                        <rect key="frame" x="0.0" y="220.5" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="roe-nT-s1o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gjV-KD-VqX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4v0-oy-7dq"/>
+                    <constraint firstItem="HJX-5Y-bgF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9ac-H4-Sfj"/>
+                    <constraint firstAttribute="trailing" secondItem="DuH-VM-5Ik" secondAttribute="trailing" id="ILN-hl-Xew"/>
+                    <constraint firstAttribute="trailing" secondItem="HJX-5Y-bgF" secondAttribute="trailing" id="QU5-aK-My3"/>
+                    <constraint firstItem="gjV-KD-VqX" firstAttribute="top" secondItem="HJX-5Y-bgF" secondAttribute="bottom" id="clf-aJ-mEV"/>
+                    <constraint firstItem="HJX-5Y-bgF" firstAttribute="top" secondItem="DuH-VM-5Ik" secondAttribute="bottom" id="cmM-8x-gcd"/>
+                    <constraint firstItem="DuH-VM-5Ik" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eDm-cw-4Os"/>
+                    <constraint firstItem="DuH-VM-5Ik" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lml-m7-RGd"/>
+                    <constraint firstAttribute="trailing" secondItem="gjV-KD-VqX" secondAttribute="trailing" id="xw8-G8-uWv"/>
+                    <constraint firstAttribute="bottom" secondItem="gjV-KD-VqX" secondAttribute="bottom" id="y67-e8-RxQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomView" destination="gjV-KD-VqX" id="PXD-mM-TP7"/>
+                <outlet property="collectionView" destination="HJX-5Y-bgF" id="1vJ-1j-Gfx"/>
+                <outlet property="leftBtn" destination="BKa-SR-EZI" id="d0I-Yk-fvK"/>
+                <outlet property="rightBtn" destination="iH8-fV-0ir" id="gEO-5O-oLA"/>
+            </connections>
+            <point key="canvasLocation" x="113.59999999999999" y="118.29085457271366"/>
+        </tableViewCell>
+    </objects>
+</document>

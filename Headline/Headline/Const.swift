@@ -12,6 +12,9 @@ let screenWidth = UIScreen.main.bounds.width
 
 let screenHeight = UIScreen.main.bounds.height
 
+let ratio = screenWidth / 375.0
+
+
 /// emoji 宽度
 let emojiItemWidth = screenWidth / 7
 

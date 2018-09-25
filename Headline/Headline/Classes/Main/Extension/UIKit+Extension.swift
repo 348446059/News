@@ -9,6 +9,15 @@
 import UIKit
 import CoreText
 
+protocol StoryboardLoadable {}
+
+extension StoryboardLoadable where Self:UIViewController {
+    /// 提供加载方法
+   static func loadStoryboard() -> Self {
+    return UIStoryboard(name: "\(self).self()", bundle: nil).instantiateViewController(withIdentifier: "\(self)") as! Self
+    }
+}
+
 protocol NibLoadable {}
 
 extension NibLoadable{
@@ -63,26 +72,170 @@ extension UIColor{
     class func grayColor210() -> UIColor {
         return UIColor(r: 210, g: 210, b: 210)
     }
-    
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
+extension UIView{
+    
+    var x :CGFloat{
+        
+        get{ return frame.origin.x}
+       
+        set(newValue){
+            
+            frame.origin.x = newValue
+        }
+    }
+    
+    var y:CGFloat{
+        get {return frame.origin.y}
+        set(newValue){
+            frame.origin.y = newValue
+        }
+    }
+    
+    var height:CGFloat{
+        get{ return frame.size.height }
+        
+        set(newValue){
+            frame.size.height = newValue
+        }
+    }
+    
+    var width:CGFloat{
+        get{ return frame.size.width }
+        
+        set(newValue){
+            frame.size.width = newValue
+        }
+    }
+    
+    var size: CGSize{
+        get{ return bounds.size }
+        
+        set(newValue){
+            bounds.size = newValue
+        }
+    }
+    
+    
+    /// centerX
+    var centerX: CGFloat {
+        get { return center.x }
+        set(newValue) {
+            var tempCenter: CGPoint = center
+            tempCenter.x            = newValue
+            center                  = tempCenter
+        }
+    }
+    
+    /// centerY
+    var centerY: CGFloat {
+        get { return center.y }
+        set(newValue) {
+            var tempCenter: CGPoint = center
+            tempCenter.y            = newValue
+            center                  = tempCenter;
+        }
+    }
+}
+
+
+protocol RegisterCellFromNib {}
+
+extension RegisterCellFromNib{
+    static var identifier:String { return "\(self)"}
+    
+    static var nib:UINib? { return UINib(nibName: "\(self)", bundle: nil)}
+}
+
+extension UITableView{
+    ///注册cell的方法
+    func lb_registerCell<T: UITableViewCell>(cell:T.Type) where T:RegisterCellFromNib {
+        if let nib = T.nib {
+            register(nib, forCellReuseIdentifier: T.identifier)
+        }else{
+            register(cell, forCellReuseIdentifier: T.identifier)
+        }
+    }
+    
+    ///从缓存池中取出cell
+    func lb_dequeueReusableCell<T:UITableViewCell>(indexPath:IndexPath) -> T where T: RegisterCellFromNib {
+        return dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as! T
+    }
+}
+
+extension UICollectionView{
+    ///注册 cell的方法
+    func lb_registerCell<T:UICollectionViewCell>(cell:T.Type) where T:RegisterCellFromNib {
+        if let nib = T.nib {
+            register(nib, forCellWithReuseIdentifier: T.identifier)
+        }else{
+            register(cell, forCellWithReuseIdentifier: T.identifier)
+        }
+    }
+    
+    
+    ///从缓存池池出队已经存在的 cell
+    func lb_dequeueReusableCell<T:UICollectionViewCell>(indexPath:IndexPath) -> T where T:RegisterCellFromNib {
+        return dequeueReusableCell(withReuseIdentifier: T.identifier, for: indexPath) as! T
+    }
+    
+    ///注册头部
+    func lb_registerSupplymentaryHeaderView<T: UICollectionReusableView>(resuableView: T.Type)  where T:RegisterCellFromNib {
+        
+        if let nib = T.nib {
+            register(nib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: T.identifier)
+        }else{
+            register(resuableView, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: T.identifier)
+        }
+    }
+    
+    ///获取可重用的头部
+    func lb_dequeueReusableSupplementaryHeaderView<T: UICollectionReusableView>(indexPath:IndexPath) -> T where T:RegisterCellFromNib {
+        return dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: T.identifier, for: indexPath) as! T
+    }
+}
+
+extension UIImageView{
+    
+    func circleImage()  {
+       ///建立上下文
+      UIGraphicsBeginImageContextWithOptions(self.frame.size, false, 0)
+       ///获取当前上下文
+      let ctx = UIGraphicsGetCurrentContext()
+      ///添加一个圆，并裁减
+        ctx?.addEllipse(in: self.bounds)
+        ctx?.clip()
+        ///绘制图像
+        self.draw(self.bounds)
+        ///获取绘制的图像
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        ///关闭上下文
+        UIGraphicsEndImageContext()
+        DispatchQueue.global().async {
+            self.image = image
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
