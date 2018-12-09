@@ -19,6 +19,8 @@
 		094728A42159EFE40070230A /* MyChannelReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094728A32159EFE40070230A /* MyChannelReusableView.swift */; };
 		094728A62159EFF20070230A /* MyChannelReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094728A52159EFF20070230A /* MyChannelReusableView.xib */; };
 		094728A9215A2F500070230A /* HomeAddCategoryController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094728A8215A2F500070230A /* HomeAddCategoryController.storyboard */; };
+		094728AB215A37090070230A /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094728AA215A37090070230A /* VideoCell.xib */; };
+		094728AD215A37340070230A /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094728AC215A37340070230A /* VideoCell.swift */; };
 		0951AD8720E5D0CF004BB885 /* HomeRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0951AD8620E5D0CF004BB885 /* HomeRecommendController.swift */; };
 		0951AD8920E5D1C8004BB885 /* SVProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0951AD8820E5D1C8004BB885 /* SVProgressHUD+Extension.swift */; };
 		0951AD8B20E5D3EF004BB885 /* RefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0951AD8A20E5D3EF004BB885 /* RefreshHeader.swift */; };
@@ -78,6 +80,10 @@
 		09BC78572153A89F00075BCE /* HomeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BC78552153A89F00075BCE /* HomeImageCell.xib */; };
 		09C130422152480E0095E3A0 /* TheyUseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C130402152480E0095E3A0 /* TheyUseCollectionCell.swift */; };
 		09C130432152480E0095E3A0 /* TheyUseCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C130412152480E0095E3A0 /* TheyUseCollectionCell.xib */; };
+		09C301B7215B74FC0030F491 /* NewsDetailImageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C301B6215B74FC0030F491 /* NewsDetailImageController.storyboard */; };
+		09C301B9215B75310030F491 /* NewsDetailImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C301B8215B75310030F491 /* NewsDetailImageController.swift */; };
+		09C301BB215B79040030F491 /* NewsDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C301BA215B79040030F491 /* NewsDetailImageCell.swift */; };
+		09C301BD215B792F0030F491 /* NewsDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C301BC215B792F0030F491 /* NewsDetailImageCell.xib */; };
 		49ADBC20515ACA174FB6D16D /* Pods_Headline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3C4D1798775A16AAE354EE /* Pods_Headline.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +100,8 @@
 		094728A32159EFE40070230A /* MyChannelReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChannelReusableView.swift; sourceTree = "<group>"; };
 		094728A52159EFF20070230A /* MyChannelReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyChannelReusableView.xib; sourceTree = "<group>"; };
 		094728A8215A2F500070230A /* HomeAddCategoryController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeAddCategoryController.storyboard; sourceTree = "<group>"; };
+		094728AA215A37090070230A /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		094728AC215A37340070230A /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		0951AD8620E5D0CF004BB885 /* HomeRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendController.swift; sourceTree = "<group>"; };
 		0951AD8820E5D1C8004BB885 /* SVProgressHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+Extension.swift"; sourceTree = "<group>"; };
 		0951AD8A20E5D3EF004BB885 /* RefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshHeader.swift; sourceTree = "<group>"; };
@@ -157,6 +165,10 @@
 		09BC78552153A89F00075BCE /* HomeImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeImageCell.xib; sourceTree = "<group>"; };
 		09C130402152480E0095E3A0 /* TheyUseCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheyUseCollectionCell.swift; sourceTree = "<group>"; };
 		09C130412152480E0095E3A0 /* TheyUseCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheyUseCollectionCell.xib; sourceTree = "<group>"; };
+		09C301B6215B74FC0030F491 /* NewsDetailImageController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsDetailImageController.storyboard; sourceTree = "<group>"; };
+		09C301B8215B75310030F491 /* NewsDetailImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailImageController.swift; sourceTree = "<group>"; };
+		09C301BA215B79040030F491 /* NewsDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailImageCell.swift; sourceTree = "<group>"; };
+		09C301BC215B792F0030F491 /* NewsDetailImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsDetailImageCell.xib; sourceTree = "<group>"; };
 		84898BD268F43D672A92E433 /* Pods-Headline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Headline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Headline/Pods-Headline.debug.xcconfig"; sourceTree = "<group>"; };
 		AC3C4D1798775A16AAE354EE /* Pods_Headline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Headline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B345406C6B86A7D1E24A4106 /* Pods-Headline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Headline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Headline/Pods-Headline.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				0958854220CE68CD00ED059E /* VideoPlayerCustomView.swift */,
+				094728AA215A37090070230A /* VideoCell.xib */,
+				094728AC215A37340070230A /* VideoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,7 +244,8 @@
 				097065D820CCEBE300C988C7 /* HomeViewController.swift */,
 				0958853F20CE683A00ED059E /* HomeTableViewController.swift */,
 				0951AD8620E5D0CF004BB885 /* HomeRecommendController.swift */,
-				094728912159DB400070230A /* VideoTableViewController.swift */,
+				09C301B8215B75310030F491 /* NewsDetailImageController.swift */,
+				09C301B6215B74FC0030F491 /* NewsDetailImageController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -323,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				097065DC20CCEC3700C988C7 /* VideoViewController.swift */,
+				094728912159DB400070230A /* VideoTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -402,6 +418,8 @@
 				094728A12159EFBE0070230A /* ChannelRecommendReusableView.xib */,
 				094728A32159EFE40070230A /* MyChannelReusableView.swift */,
 				094728A52159EFF20070230A /* MyChannelReusableView.xib */,
+				09C301BA215B79040030F491 /* NewsDetailImageCell.swift */,
+				09C301BC215B792F0030F491 /* NewsDetailImageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -550,14 +568,17 @@
 				094728A62159EFF20070230A /* MyChannelReusableView.xib in Resources */,
 				097065EB20CCF06500C988C7 /* Images.xcassets in Resources */,
 				097065FD20CD08DD00C988C7 /* night_theme.plist in Resources */,
+				09C301BD215B792F0030F491 /* NewsDetailImageCell.xib in Resources */,
 				0958855C20CE86AC00ED059E /* activity.plist in Resources */,
 				09BC78572153A89F00075BCE /* HomeImageCell.xib in Resources */,
 				0958856120CE86B700ED059E /* settingPlist.plist in Resources */,
 				0958856020CE86B700ED059E /* shengxiao.plist in Resources */,
 				09BC78532153A70100075BCE /* HomeImageCollectionView.xib in Resources */,
 				097BF38621115C2E006BED13 /* HomeUserCell.xib in Resources */,
+				09C301B7215B74FC0030F491 /* NewsDetailImageController.storyboard in Resources */,
 				094728A22159EFBE0070230A /* ChannelRecommendReusableView.xib in Resources */,
 				09C130432152480E0095E3A0 /* TheyUseCollectionCell.xib in Resources */,
+				094728AB215A37090070230A /* VideoCell.xib in Resources */,
 				09BC784F2153A2A900075BCE /* HomeCell.xib in Resources */,
 				09ACAA2720B6CB3000FD1AAF /* Assets.xcassets in Resources */,
 				0947289A2159E60C0070230A /* AddCategoryCell.xib in Resources */,
@@ -682,7 +703,10 @@
 				09BC78562153A89F00075BCE /* HomeImageCell.swift in Sources */,
 				097065E920CCECF200C988C7 /* HuoshanViewController.swift in Sources */,
 				097065E120CCEC8800C988C7 /* RedPackageViewController2.swift in Sources */,
+				09C301B9215B75310030F491 /* NewsDetailImageController.swift in Sources */,
 				094728942159E2F20070230A /* HomeAddCategoryController.swift in Sources */,
+				094728AD215A37340070230A /* VideoCell.swift in Sources */,
+				09C301BB215B79040030F491 /* NewsDetailImageCell.swift in Sources */,
 				09BC78452153987D00075BCE /* Wenda.swift in Sources */,
 				096C704520BC025E00CF860F /* UserDetail.swift in Sources */,
 				0958854C20CE82F700ED059E /* MyCellModel.swift in Sources */,

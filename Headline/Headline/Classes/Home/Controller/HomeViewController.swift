@@ -34,6 +34,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
        setupUI()
+       clickAction()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -110,7 +111,7 @@ extension HomeViewController{
     
     private func clickAction()  {
         /// 添加频道点击
-        addChannelButton.rx.controlEvent(.touchDragInside).subscribe(onNext: { [weak self] in
+        addChannelButton.rx.controlEvent(.touchUpInside).subscribe(onNext: { [weak self] in
             let homeAddCategory = HomeAddCategoryController.loadStoryboard()
             homeAddCategory.modalSize = (width: .full, height: .custom(size: Float(screenHeight - (isIPhoneX ? 44 : 20))))
             self?.present(homeAddCategory, animated: true, completion: nil)

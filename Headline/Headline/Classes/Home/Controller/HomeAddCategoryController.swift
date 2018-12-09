@@ -81,6 +81,11 @@ class HomeAddCategoryController: AnimatableModalViewController,StoryboardLoadabl
         collectionView.lb_registerSupplymentaryHeaderView(resuableView: MyChannelReusableView.self)
         collectionView.allowsMultipleSelection = true
         collectionView.addGestureRecognizer(longPressRecognizer)
+        
+        NetworkTool.loadHomeCategoryRecommend {
+            self.categories = $0
+            self.collectionView.reloadData()
+        }
     }
 }
 

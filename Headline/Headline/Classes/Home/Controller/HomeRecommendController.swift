@@ -57,11 +57,17 @@ extension HomeRecommendController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        var aNews = news[indexPath.row]
-//        if indexPath.row == 0 { //默认设置起一个cell调转到图片详情页面
-//
-//
-//        }
+        var aNews = news[indexPath.row]
+        if indexPath.row == 0 { //默认设置起一个cell调转到图片详情页面
+            let newsDetailIMageVC = NewsDetailImageController.loadStoryboard()
+            newsDetailIMageVC.isSelectedFirstCell = true
+            aNews.item_id = 6450240420034118157
+            aNews.group_id = 6450237670911852814
+            newsDetailIMageVC.aNews = aNews
+            present(newsDetailIMageVC, animated: false, completion: nil)
+            
+
+        }
         
     }
 }
